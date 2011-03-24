@@ -1,0 +1,10 @@
+pe_name           gpu
+slots             16
+user_lists        NONE
+xuser_lists       NONE
+start_proc_args   /usr/local/sge/gpu/startgpu.sh
+stop_proc_args    /usr/local/sge/gpu/stopgpu.sh
+allocation_rule   $pe_slots
+control_slaves    FALSE
+job_is_first_task FALSE
+urgency_slots     min

@@ -1,0 +1,7 @@
+#!/bin/sh
+#$ -pe gpu 1
+#$ -q mmb-gpu.q
+#$ -cwd
+
+echo "machine `cat $TMPDIR/machine`"
+echo "FREEGPU `cat $TMPDIR/gpumachine`"
